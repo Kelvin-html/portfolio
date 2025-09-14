@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Responsive Navigation</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <link rel="stylesheet" href="src/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+</head>
+<body class="bg-gray-50/10 text-gray-900 overflow-x-hidden">
+    <div id="top"></div>
+    <!-- Header with responsive navigation -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-md sticky top-0 md:top-2 lg:top-5 z-50 border border-zinc-200 lg:max-w-3xl md:max-w-2xl mx-auto  md:rounded-[10px]">
+        <nav class="max-w-6xl mx-auto px-6 py-4">
+<div class="flex justify-between items-center">
+    <!-- Logo -->
+    <a href="#top" class="hover:opacity-60 transition-opacity" ><img src="icons/house.svg" alt="Home"></a>
+    
+    <!-- Desktop Menu (hidden on mobile) -->
+    <div class="hidden md:flex space-x-8">
+        <div class="relative group inline-block">
+            <a href="https://app.enhancv.com/share/bbe7615c/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" target="_blank" class="text-gray-600 hover:opacity-60 transition-opacity "><img class="w-6" src="icons/readdotcv.png" alt="CV"></a>
+            
+        </div>
+
+      <div class="relative group inline-block">
+        <a href="https://github.com/Kelvin-html" class=" hover:opacity-60 transition-opacity"><img class="w-6" src="icons/github.png" alt="Github"></a>
+      </div>
+
+     <div class="relative group inline-block">
+        <a href="https://linkedin.com/in/kelvin-akpaka"  class="text-gray-600 hover:opacity-60 transition-opacity">
+            <img src="icons/linkedin.svg" alt="LinkedIn">
+        </a>
+      </div>
+
+      <div class="relative group inline-block">
+        <a href="mailto:akpakakelvin1@gmail.com" class="text-gray-600 hover:opacity-60 transition-opacity "> 
+            <img class="w-6" src="icons/mailboxdotorg.svg" alt="Email">
+        </a>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu Button (visible on mobile) -->
+     
+    <button id="mobileMenuBtn" class="md:hidden focus:outline-none p-2 rounded-md">
+        <svg id="hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg id="close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+    </button>
+</div>
+</nav>
+</header>
+
+
+<!-- Mobile Menu Dropdown (hidden by default) -->
+  <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-30"></div>
+
+<div id="mobileMenu" class="hidden opacity-0 scale-y-95 transition-all duration-300 ease-out transform origin-top 
+ fixed right-0 left-0 top-auto md:hidden pb-8 pl-6 border-t 
+ bg-white/70 backdrop-blur-lg shadow-lg z-40">
+
+    <div class="flex flex-col space-y-8 pt-4">
+
+          
+            <a href="https://github.com/Kelvin-html" class=" flex items-center space-x-4 text-gray-600 hover:text-gray-900 transition-colors duration-200 py-2"> <img class="w-6 h-6" src="icons/github.png" alt="Github">
+            <p class="font-semibold">Github</p></a>
+          
+            <a href="https://linkedin.com/in/kelvin-akpaka"  class=" flex items-center space-x-4 text-gray-600 hover:text-gray-900 transition-colors duration-200 py-2"> <img src="icons/linkedin.svg" alt="LinkedIn">
+            <p class="font-semibold">LinkedIn</p></a>
+        
+        <a href="https://app.enhancv.com/share/bbe7615c/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" target="_blank" class="flex items-center space-x-4 text-gray-600 hover:text-gray-900 transition-colors duration-200 py-2"><img class="w-6" src="icons/readdotcv.png" alt="CV">
+        <p class="font-semibold">Dowbload CV</p></a>
+        
+
+        <a href="mailto:akpakakelvin1@gmail.com" class="flex items-center space-x-4 text-gray-600 hover:text-gray-900 transition-colors duration-200 py-2"><img class="w-6" src="icons/mailboxdotorg.svg" alt="Email">
+            <p class="font-semibold">Contact</p></a>
+    </div>
+</div>
+
+    <!-- Main content -->
+    <main class="max-w-4xl mx-auto px-10 md:px-20 py-12">
+<!-- Hero section -->
+<section  data-aos="fade-in"  class="mb-16 mt-8" >
+    <div  data-aos="fade-up" data-aos-delay="100"  class="rounded-full w-[80px] h-[80px] ml-2 mb-6"><img class="rounded-full" src="thumbnails/main.img.png" alt="My-Picture"></div>
+    <h2 id="typewriter" data-aos="fade-up" data-aos-delay="200" class="text-3xl md:text-4xl lg:text-4xl  mb-4 leading-none tracking-tight font-semibold"><!-- Typewriting animation goes here--></h2>
+    <p class=" text-gray-600 leading-relaxed" data-aos="fade-up" data-aos-delay="300">
+        Building the <span class=" font-bold">web</span>, one <span class=" font-bold"> pixel </span> at a time
+    </p>
+      
+    <!--Hire Me Button and Available div-->
+    <div class="flex items-center gap-6 mt-6">
+     <a href="mailto:akpakakelvin1@gmail.com" target="blank"> 
+        <button data-aos="fade-up" data-aos-delay="400" class=" bg-blue-300 hover:bg-blue-400 transition-colors duration-200 text-white rounded-xl h-11 px-3 w-36 md:w-48 text-base font-semibold md:text-xl">
+           Hire me
+        </button>
+     </a>
+
+        <div  data-aos="fade-up" data-aos-delay="400"  class="rounded-full bg-black/90 backdrop-blur-lg h-12 w-32  text-white text-center flex justify-center items-center gap-2">
+          <span class="relative flex h-3 w-3 items-center justify-center">
+      <span class="animate-ping absolute inset-0 inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+         </span>
+            Available
+        </div>
+
+    </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about" class="mb-16">
+    <h3 data-aos="fade-up" data-aos-delay="500"  class="md:text-3xl text-2xl font-bold mt-10">About</h3>
+    <div class="space-y-4 leading-relaxed">
+    <p data-aos="fade-up" data-aos-delay="500" class="text-gray-600">I’m Kelvin — a frontend developer with a serious thing for clean UI and websites that actually work.</p>
+
+<p data-aos="fade-up" data-aos-delay="600" class="text-gray-600 "><span class="font-bold text-blue-300">Here’s what I do:</span> I take clunky interfaces and turn them into responsive, intuitive, fast-loading experiences. The kind that feel smooth on mobile and don't scream “I was built in 2013.”</p>
+
+<p   data-aos="fade-up" data-aos-delay="700" class="text-gray-600 ">I’m not just stacking divs and calling it design — I build real products with React, Tailwind, and just enough JavaScript to keep things smart, not bloated.</p>
+
+<p  data-aos="fade-up" data-aos-delay="700" class="text-gray-600 ">I'm currently looking for teams that care about quality — not just deadlines. Junior roles, internships, remote collabs — if you're building something cool, let’s talk.</p>
+
+<p  data-aos="fade-up" data-aos-delay="800" class="text-gray-600 ">Outside of code? Gym. Binge watching my favorite series. And always spacing buttons 8px too perfectly.</p>
+
+<p  data-aos="fade-up" data-aos-delay="800" class="text-gray-600 ">I don’t just build websites. I build websites people want to use.</p>
+        </section>
+
+<!-- Projects section -->
+<section id="projects" class="mb-16">
+  <h3 data-aos="fade-up" data-aos-delay="300"  class="text-3xl font-bold mb-8">Featured <span class="text-blue-300">Projects</span></h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+
+      <div data-aos="zoom-in"  class="tilt-card bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300 ">
+          <div class="w-full h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <img class="rounded-lg w-full h-48 grayscale hover:grayscale-0 transition duration-300" src="thumbnails/projects-pic-1.png" alt="">
+          </div>
+          <h4 class="text-xl font-semibold mb-2">GallopGo</h4>
+          <p class="text-gray-600 mb-4">A responsive, modern website for a fictional U.S. horse transport service.</p>
+          <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-gray-100 text-blue-400 rounded-full text-sm">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-blue-400 rounded-full text-sm">TailwindCSS</span>
+              <span class="px-3 py-1 bg-gray-100 text-blue-400 rounded-full text-sm">Javascript</span>
+          </div>
+          <div class="mt-4 flex gap-4 items-center">
+            <a class="flex gap-2 leading-tight" href="https://gallopgo.netlify.app/" target="_blank"><img class="w-4" src="icons/link.svg" alt=""> Live demo
+              </a>
+
+              <a class="flex gap-2 items-center" href="https://github.com/kelvin-html/gallopgo" target="_blank">
+                <img class="w-4" src="icons/github.png" alt="">Github
+              </a>
+            </div>
+      </div>
+      
+      <div data-aos="zoom-in" data-aos-delay="200" class="tilt-card bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-full h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <span class="text-gray-500">Project Image</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2">Weather App</h4>
+          <p class="text-gray-600 mb-4">Real-time weather application with location-based forecasts</p>
+          <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-gray-100 text-blue-400 rounded-full text-sm">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-blue-400 rounded-full text-sm">API</span>
+              <span class="px-3 py-1 bg-gray-100 text-blue-400 rounded-full text-sm">CSS</span>
+          </div>
+      </div>
+      
+      <div data-aos="zoom-in" data-aos-delay="400" class="tilt-card bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-full h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <span class="text-gray-500">Project Image</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2">TrackApply</h4>
+          <p class="text-gray-600 mb-4">TrackApply is a React and Tailwind web app that helps job seekers stay organized and manage their applications, especially during busy job hunts.</p>
+          <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-gray-100 text-blue-400 rounded-full text-sm">Tailwind CSS</span>
+              <span class="px-3 py-1 bg-gray-100 text-blue-400 rounded-full text-sm">React</span>
+              <span class="px-3 py-1 bg-gray-100 text-blue-400 rounded-full text-sm">Vite</span>
+          </div>
+      </div>
+  </div>
+</section>
+
+        <!--Experience section-->
+        <section id="experience" class="mb-16">
+          <h3 data-aos="fade-up" data-aos-delay="300"  class="text-3xl font-bold mb-8">My <span class="text-blue-300">Experiences</span></h3>
+
+          <div class="flex flex-col gap-5 " >
+
+
+            <div class="flex gap-4 items-center" data-aos="fade-up" data-aos-delay="400">
+              <p>Frontend Dev Intern at </p> 
+                <a class="flex gap-2 font-bold" target="blank" href="https://www.internpulse.com/"> 
+                  <img class="w-4 " src="icons/link.svg" alt="">
+                  InternPulse 
+                 
+               </a> 
+            </div>
+
+             <div class="flex gap-4 items-center" data-aos="fade-up" data-aos-delay="500">
+           <p>Frontend Dev at</p>
+             <a class="flex gap-2 font-bold" target="blank" href="https://www.temmack.com.ng/">
+              <img class="w-4" src="icons/link.svg" alt="">
+              Temmack Solutions
+                
+            </a>
+            </div>
+
+            </div>
+        </section>
+
+<!-- Skills section -->
+<section id="skills" class="mb-16">
+    <h3 data-aos="fade-up" data-aos-delay="300" class="text-3xl font-bold mb-8">Tech <span class="text-blue-300">Stack</span> </h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
+            <div class="text-2xl grid justify-center"><img class="w-[50px]" src="icons/html5-color.svg" alt=""></div>
+            <h4 class="font-semibold">HTML</h4>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
+            <div class="text-2xl mb-2 flex justify-center"><img class="w-[50px]" src="icons/css-color.svg" alt=""></div>
+            <h4 class="font-semibold">CSS</h4>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
+                <div class="text-2xl mb-2 flex justify-center"><img class="w-[50px]" src="icons/tailwindcss-color.svg" alt=""></div>
+                <h4 class="font-semibold">Tailwind</h4>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
+                <div class="text-2xl mb-2 flex justify-center"><img class="w-[50px]" src="icons/javascript-color.svg" alt=""></div>
+                <h4 class="font-semibold">Javascript</h4>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
+                <div class="text-2xl mb-2 flex justify-center"><img class="w-[50px]" src="icons/react-color.svg" alt=""></div>
+                <h4 class="font-semibold">React</h4>
+            </div>
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
+                <div class="text-2xl mb-2 flex justify-center"><img class="w-[50px]" src="icons/git-color.svg" alt=""></div>
+                <h4 class="font-semibold">Git</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="text-center">
+        <h3 class="text-3xl font-bold mb-8">Get In Touch</h3>
+        <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+            I'm always open to discussing new opportunities and interesting projects.
+        </p>
+        <div class="flex justify-center space-x-6">
+            <a href="mailto:akpakakelvin1@gmail.com" target="_blank" class="bg-blue-300 text-white px-6 py-3 rounded-lg hover:bg-blue-400 transition-colors duration-200">
+                Send Email
+            </a>
+            <a href="https://linkedin.com/in/kelvin-akpaka" target="_blank" class="border border-gray-300 text-gray-900 px-6 py-3 rounded-lg hover:bg-black hover:text-white transition-colors duration-200">
+                LinkedIn
+            </a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-white border-t border-gray-200 mt-16">
+    <div class="max-w-6xl mx-auto px-6 py-8 text-center text-gray-600">
+        <p>&copy; 2025 Kelvin Akpaka. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+
+     new TypeIt("#typewriter", {
+    speed: 60,
+    startDelay: 300,
+    cursor: false,
+  })
+  .type("Hey, I'm Kelvin.")
+  .pause(300)
+  .break()
+  .type('<span class="text-2xl md:text-3xl lg:text-3xl font-mono"> >Frontend <span class="text-blue-300">Developer.</span></span>')
+  .go();
+
+    window.scrollTo(0, 0);
+
+// Then initialize AOS
+AOS.init({
+  once: true,
+  duration: 700,
+  offset: 0,
+  delay: 0
+});
+
+    // Elements
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const hamburger = document.getElementById('hamburger');
+const closeIcon = document.getElementById('close');
+const overlay = document.getElementById("overlay");
+
+// Track menu state
+let isMenuOpen = false;
+
+// Toggle menu open/close
+mobileMenuBtn.addEventListener('click', () => {
+  isMenuOpen = !isMenuOpen;
+
+  if (isMenuOpen) {
+  mobileMenu.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  setTimeout(() => {
+    mobileMenu.classList.remove('opacity-0', 'scale-y-95');
+    mobileMenu.classList.add('opacity-100', 'scale-y-100');
+    overlay.classList.remove('opacity-0');
+    overlay.classList.add('opacity-50');
+  }, 10);
+
+  hamburger.classList.add('hidden');
+  closeIcon.classList.remove('hidden');
+} else {
+  mobileMenu.classList.add('opacity-0', 'scale-y-95');
+  mobileMenu.classList.remove('opacity-100', 'scale-y-100');
+  overlay.classList.add('opacity-0');
+  overlay.classList.remove('opacity-50');
+
+  setTimeout(() => {
+    mobileMenu.classList.add('hidden');
+    overlay.classList.add('hidden');
+    hamburger.classList.remove('hidden');
+    closeIcon.classList.add('hidden');
+  }, 300);
+}});
+
+overlay.addEventListener("click", () => {
+  isMenuOpen = false;
+
+  mobileMenu.classList.add('opacity-0', 'scale-y-95');
+  mobileMenu.classList.remove('opacity-100', 'scale-y-100');
+  overlay.classList.add('opacity-0');
+  overlay.classList.remove('opacity-50');
+
+  setTimeout(() => {
+    mobileMenu.classList.add('hidden');
+    overlay.classList.add('hidden');
+    hamburger.classList.remove('hidden');
+    closeIcon.classList.add('hidden');
+  }, 300);
+});
+
+
+// Auto-close when clicking a link inside the menu
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('opacity-0', 'scale-y-95');
+    mobileMenu.classList.remove('opacity-100', 'scale-y-100');
+    overlay.classList.add('opacity-0');
+    overlay.classList.remove('opacity-50');
+
+    setTimeout(() => {
+      mobileMenu.classList.add('hidden');
+      overlay.classList.add('hidden');
+      hamburger.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+      isMenuOpen = false;
+    }, 300);
+  });
+});
+
+// Optional: Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+//Project Cards Animation
+  document.querySelectorAll(".tilt-card").forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * 10;
+      const rotateY = ((x - centerX) / centerX) * -10;
+
+      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      card.style.transition = "transform 0.1s ease-out";
+    });
+
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "rotateX(0deg) rotateY(0deg)";
+      card.style.transition = "transform 0.5s ease-in";
+    });
+  });
+
+    </script>
+</body>
+</html>
