@@ -8,6 +8,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <link rel="stylesheet" href="src/output.css">
     <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+    <head>
+    <link rel="preload" as="image" href="thumbnails/main.img.png">
+</head>
 </head>
 <body class="bg-gray-50/10 text-gray-900 overflow-x-hidden">
     <div id="top"></div>
@@ -86,7 +89,14 @@
     <main class="max-w-4xl mx-auto px-10 md:px-20 py-12">
 <!-- Hero section -->
 <section  data-aos="fade-in"  class="mb-16 mt-8" >
-    <div  data-aos="fade-up" data-aos-delay="100"  class="rounded-full w-[80px] h-[80px] ml-2 mb-6"><img class="rounded-full" src="thumbnails/main.img.png" alt="My-Picture"></div>
+   <div data-aos="fade-up" data-aos-delay="100" class="rounded-full w-[80px] h-[80px] ml-2 mb-6 bg-gray-200 animate-pulse">
+    <img class="rounded-full w-full h-full object-cover" 
+         src="thumbnails/main.img.png" 
+         alt="My-Picture"
+         loading="eager"
+         fetchpriority="high"
+         onload="this.parentElement.classList.remove('animate-pulse', 'bg-gray-200')">
+</div>
     <h2 id="typewriter" data-aos="fade-up" data-aos-delay="200" class="text-3xl md:text-4xl lg:text-4xl  mb-4 leading-none tracking-tight font-semibold"><!-- Typewriting animation goes here--></h2>
     <p class=" text-gray-600 leading-relaxed" data-aos="fade-up" data-aos-delay="300">
         Building the <span class=" font-bold">web</span>, one <span class=" font-bold"> pixel </span> at a time
@@ -113,7 +123,7 @@
 
     <!--About Section-->
     <section id="about" class="mb-16">
-    <h3 data-aos="fade-up" data-aos-delay="500"  class="md:text-3xl text-2xl font-bold mt-10">About</h3>
+    <h3 data-aos="fade-up" data-aos-delay="500"  class="md:text-3xl text-2xl font-bold mt-10">About </h3>
     <div class="space-y-4 leading-relaxed">
     <p data-aos="fade-up" data-aos-delay="500" class="text-gray-600">I’m Kelvin — a frontend developer with a serious thing for clean UI and websites that actually work.</p>
 
